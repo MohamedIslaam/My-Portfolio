@@ -251,9 +251,6 @@ header ul li a:hover{
     box-shadow: 3px 3px 15px #000000; 
 }
 
-
-
-
 .edu .educont .di .img {
     min-width: 200px;
     max-width: 300px; 
@@ -426,6 +423,59 @@ footer {
 
 .social-links a:hover {
     text-decoration: underline;
+}
+header{
+    display: flex;
+    justify-content: right;
+    /* border: 1px solid; */
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 15px;
+}
+p{
+    display: none;
+}
+.side-nav{
+    /* border: 1px solid; */
+    background-color: #333;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 15px #000000;
+    color: white;
+}
+
+.side-nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.side-nav ul li a:hover{
+    color: #fff; 
+    text-shadow: 
+        0 0 20px #00f,     
+        0 0 30px #8a2be2,  
+        0 0 40px #8a2be2,  
+        0 0 50px #8a2be2,  
+        0 0 60px #8a2be2;
+
+
+}
+
+@media (max-width:450px) {
+    header ul{
+        display: none;
+    }
+    p{
+        display: block;
+    }
 }
 /* 
 
