@@ -176,30 +176,29 @@ header ul li a:hover{
     height: auto;
 }
 
-
-.skill{
+.skill {
     background-color: #44047f;
     padding: 30px 10vw 20px;
 }
 
-.skill h1{
+.skill h1 {
     display: flex;
     justify-content: center;
     color: white;
     margin-bottom: 50px;
 }
 
-.skill .skillcont{
+.skill .skillcont {
     background-color: #00000065;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap:20px;
+    gap: 20px;
     justify-content: space-between;
     border-radius: 10px;
 }
 
-.skill .skillcont .di{
+.skill .skillcont .di {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,20 +209,18 @@ header ul li a:hover{
     border-radius: 10px;
 }
 
-.skill .skillcont .d7{
-    background-color: gray;
+.skill .skillcont .di img {
+    width: 50%;
+    height: auto; /* Maintain aspect ratio */
 }
 
-.skill .skillcont .d7 img{
-    filter: grayscale(100%);
-}
-.skill .skillcont p{
+.skill .skillcont p {
     color: white;
 }
 
 .edu {
     background-color: rgb(199, 220, 229);
-    padding: 30px 15vw 50px;
+    padding: 30px 10vw 50px;
 }
 
 .edu .educont {
@@ -241,6 +238,7 @@ header ul li a:hover{
     padding: 20px;
     border-radius: 15px;
     align-items: center;
+    justify-content: center;
     box-shadow: 1px 1px 10px #000000;
     transition: transform 0.1s ease, box-shadow 0.1s ease; 
 }
@@ -252,7 +250,7 @@ header ul li a:hover{
 
 .edu .educont .di .img {
     min-width: 200px;
-    max-width: 300px; 
+    max-width: 350px; 
     /* border: 1px solid; */
 }
 
@@ -272,69 +270,70 @@ header ul li a:hover{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 20px;
 }
-.project .procont .di {
+
+.pi{
+    min-width: 300px;
+    min-height: 200px;
+    background-image: url('p1.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
     position: relative;
-    /* width: 50%; */
-    max-width: 400px;
-    /* border: 1px solid; */
-    transition: transform 0.1s ease, box-shadow 0.1s ease; 
-
+    /* border: 1px solid black; */
+    &:hover{
+        .show{
+            display: block;
+        }
+    }
 }
 
-.project .procont .di:hover {
-    transform: scale(1.05); 
-    box-shadow: 3px 3px 15px rgb(6, 6, 55); 
+.pi2{
+    background-image: url('p2.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
-.image {
-    display: block;
+.pi3{
+    background-image: url('p3.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.show{
+    display: none;
+}
+
+.inshow{
     width: 100%;
-    height: auto;
-  }
-  
-.overlay {
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); 
-    color: #f1f1f1; 
-    width: 360px;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
+    background-color: #00000091;
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 15px 5px;
     align-items: center;
-    justify-content: center;
-}
-
-
-
-.overlay button{
-    cursor: pointer;
-    background-color: #181717;
-    border: 0;
-    width: 100px;
-    height: 40px;
+    position: absolute;
+    bottom: 0;
     color: white;
     font-weight: bold;
-    border-radius: 10px;
 }
-  
-  .project .procont .di:hover .overlay {
-    opacity: 1;
-  }
 
+.show button{
+    font-weight: bold;
+    border: 0;
+    padding: 10px 15px;
+    background-color: #181717;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
   .form .container {
     display: flex;
-    flex-wrap: wrap; /* This ensures the content stacks when space is limited */
+    flex-wrap: wrap; 
     width: 80%;
     max-width: 600px;
     background-color: white;
@@ -466,98 +465,31 @@ header #open{
     header #open{
         display: block;
     }
-}
-
-/* 
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    .body{
+        padding: 80px 1vw 50px;
     }
-
-    .image-section, .form-section {
-        flex: 1 1 100%; 
-    }
-
-    .form-section {
-        padding: 20px;
-    }
-}
-@media (max-width: 768px) {
-    .edu .educont .di {
-        flex-direction: column; 
-    }
-
-    .edu .educont .di .img {
-        max-width: 100%; 
-    }
-
-    .edu {
-        padding: 30px 5vw 50px; 
-    }
-} 
-
-@media (max-width: 768px) {
-    header {
-        padding: 20px;
-        gap: 5vw;
-        flex-direction: column; 
-    }
-}
-@media (max-width: 768px) {
-    .body {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 5vw;
-    }
-
-    .body .container, .body .img {
-        max-width: 100%;
-    }
-}
-@media (max-width: 768px) {
-    .about-body {
-        padding: 0px 5vw 50px;
-    }
-
-    .about-body .abcont {
-        flex-direction: column;
-        gap: 20px;
+    .about-body{
+        padding: 0px 1vw 50px;
     }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+@media (max-width: 768px) {
+    .skill .skillcont {
+        justify-content: center;
+    }
+
+    .skill .skillcont .di {
+        width: 45%;
+    }
 }
 
-@media (max-width: 768px) {
-    .edu .educont {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .edu .educont .di {
-        max-width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .edu .educont .di img {
+@media (max-width: 480px) {
+    .skill .skillcont .di {
         width: 100%;
-        height: auto;
+    }
+
+    .skill h1 {
+        font-size: 20px; 
+        text-align: center;
     }
 }
-
-.edu {
-    overflow-x: hidden;
-}
-
-.edu .educont .di {
-    max-width: 100%;
-    margin: 0 auto;
-}
- */
