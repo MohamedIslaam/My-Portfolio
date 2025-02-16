@@ -282,6 +282,14 @@ header ul li a:hover{
     margin-top: 20px;
 }
 
+.appcont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
 .pi{
     min-width: 300px;
     min-height: 200px;
@@ -296,6 +304,15 @@ header ul li a:hover{
             display: block;
         }
     }
+}
+
+.ai1{
+    background-image: url('m1.jpg');
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    box-shadow: 0px 0px 10px rgb(14, 13, 13);
+    border-radius: 5px;
 }
 
 .pi2{
