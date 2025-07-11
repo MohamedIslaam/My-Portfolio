@@ -325,6 +325,15 @@ header ul li a:hover{
     border-radius: 5px;
 }
 
+.ai3{
+    background-image: url('m3.png');
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    box-shadow: 0px 0px 10px rgb(14, 13, 13);
+    border-radius: 5px;
+}
+
 .pi2{
     background-image: url('p2.png');
     background-size: cover;
